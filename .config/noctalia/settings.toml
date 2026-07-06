@@ -1,0 +1,95 @@
+[backdrop]
+enabled = true
+
+[bar.default]
+background_opacity = 0.79999998211860657
+border = "on_surface"
+center = [ "session", "spacer_2", "clock", "spacer_3", "control-center" ]
+contact_shadow = true
+end = [
+    "tray",
+    "notifications",
+    "clipboard",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "network",
+    "screenshot",
+    "mpvpaper",
+    "wallhaven",
+    "recorder"
+]
+radius = 18
+start = [ "launcher", "workspaces", "audio_visualizer", "media", "sysmon" ]
+
+[dock]
+active_monitor_only = true
+auto_hide = true
+enabled = true
+launcher_position = "start"
+reserve_space = false
+show_dots = true
+
+[hot_corners]
+enabled = true
+
+    [hot_corners.top_left]
+    action = "window_switcher"
+
+[plugins]
+enabled = [ "noctalia/wallhaven", "noctalia/screen_recorder", "noctalia/mpvpaper" ]
+
+[shell]
+corner_radius_scale = 1.1000000163912773
+font_family = "SF Pro Display"
+niri_overview_type_to_launch_enabled = true
+telemetry_enabled = true
+
+    [shell.panel]
+    transparency_mode = "soft"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 24
+
+[theme]
+builtin = "Ayu"
+mode = "dark"
+source = "builtin"
+
+[weather]
+unit = "imperial"
+
+[widget.audio_visualizer]
+bands = 24
+color_2 = "tertiary"
+show_when_idle = true
+width = 100
+
+[widget.media]
+hide_when_no_media = true
+
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
+
+[widget.network]
+scale = 1.1500000000000001
+show_label = false
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
+
+[widget.spacer_2]
+length = 69
+type = "spacer"
+
+[widget.spacer_3]
+length = 69
+type = "spacer"
+
+[widget.tray]
+drawer = true
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"

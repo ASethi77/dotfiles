@@ -1,0 +1,16 @@
+[Unit]
+Description=Vicinae Launcher Server
+# Ensure the graphical session is ready if needed
+After=graphical-session.target
+
+[Service]
+# Use the full path to your Vicinae AppImage or binary
+ExecStart=/usr/local/bin/vicinae server
+Restart=always
+RestartSec=3
+# Optional: Set environment variables if the server fails to find your session
+# Environment=XDG_SESSION_TYPE=wayland
+
+[Install]
+# Use default.target for user services to start on login
+WantedBy=default.target
