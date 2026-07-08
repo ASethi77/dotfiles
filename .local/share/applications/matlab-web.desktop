@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MATLAB Web
+Comment=Launch MATLAB through matlab-proxy in Chrome app mode
+Icon=/usr/local/MATLAB/R2023a/ui/icons/24x24/matlabLogo.svg
+Exec=/home/aakash/.local/bin/matlab-web-launcher
+Categories=Science;Math;
+Terminal=false
+StartupNotify=true
